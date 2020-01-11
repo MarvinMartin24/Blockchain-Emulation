@@ -44,7 +44,7 @@ void displayAdresses(blockChain_t* blockchain){
 
 // Procedure: Afficher les montants de toute les addresses
 void displayAdressesCount(blockChain_t* blockchain){
-    printf ("\n\nBalance de la blockchain:\n",blockchain->countAddresses);
+    printf ("\n\nBalance de la blockchain: %d\n",blockchain->countAddresses);
     for(int i=0 ; i<blockchain->countAddresses ; i++){
             printf("Balance adresse %d : %d ETH\n",i+1,getBalanceOf(blockchain, blockchain->addresses[i]));
     }
